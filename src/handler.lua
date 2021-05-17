@@ -13,16 +13,16 @@ function RedirectHandler:access(conf)
     RedirectHandler.super.access(self)
     local status_code = conf.status_code
     local redirect_url = conf.redirect_url
-    local status_code = conf.status_code
     local redirect_url2 = conf.redirect_url2
-    local status_code = conf.status_code
     local redirect_url3 = conf.redirect_url3
   
     if conf.path == ngx.var.request_uri then
         return ngx.redirect(redirect_url, status_code)
-    elseif conf.path2 == ngx.var.request_uri2 then
+    end
+    if conf.path2 == ngx.var.request_uri2 then
         return ngx.redirect(redirect_url2, status_code)
-    elseif conf.path3 == ngx.var.request_uri3 then
+    end
+    if conf.path3 == ngx.var.request_uri3 then
         return ngx.redirect(redirect_url3, status_code)
     end
   
