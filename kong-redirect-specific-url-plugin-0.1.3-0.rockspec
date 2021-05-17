@@ -1,6 +1,6 @@
 
 package = "kong-redirect-specific-url-plugin"
-version = "0.1.2-0"
+version = "0.1.3-0"
 source = {
    url = "git+https://github.com/sabir-piludiya/kong-redirect-specific-url-plugin"
 }
