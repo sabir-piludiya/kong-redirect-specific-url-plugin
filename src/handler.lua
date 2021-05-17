@@ -19,10 +19,10 @@ function RedirectHandler:access(conf)
     if conf.path == ngx.var.request_uri then
         return ngx.redirect(redirect_url, status_code)
     end
-    if conf.path2 == ngx.var.request_uri2 then
+    if conf.path2 == ngx.var.request_uri then
         return ngx.redirect(redirect_url2, status_code)
     end
-    if conf.path3 == ngx.var.request_uri3 then
+    if conf.path3 == ngx.var.request_uri then
         return ngx.redirect(redirect_url3, status_code)
     end
   
